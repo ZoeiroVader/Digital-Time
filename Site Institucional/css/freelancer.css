@@ -1,7 +1,7 @@
 /*!
- * Start Bootstrap - Freelancer v5.0.3 (https://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
+ * Start Bootstrap - Digital Time - Making softwares in your time... v5.0.3 ()
+ * Copyright 2013-2019 Guilherme Santos
+ * Licensed under  (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
 
 body {
@@ -103,6 +103,23 @@ section h2 {
   line-height: 3.1rem;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.console-container {
+  font-family: 'Chakra Petch', sans-serif;
+  display: block;
+  color: white;
+}
+
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -189,7 +206,7 @@ header.masthead h2 {
 
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: calc(6rem + 106px);
+    padding-top: calc(6rem);
     padding-bottom: 6rem;
   }
   header.masthead h1 {
