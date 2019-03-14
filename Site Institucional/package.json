@@ -1,11 +1,11 @@
 {
-    "title": "Freelancer",
+    "title": "Digital Time - Making softwares in your time...",
     "name": "startbootstrap-freelancer",
     "version": "5.0.3",
     "scripts": {
         "start": "gulp watch"
     },
-    "description": "A freelancer portfolio HTML theme for Bootstrap.",
+    "description": "Site Institucional da empresa Digital Time",
     "keywords": [
         "Empresa",
         "Digital",
@@ -17,7 +17,7 @@
     "author": "Guilherme Santos",
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
+        "url": "https://github.com/ZoeiroVader/Digital-Time"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.7.2",
