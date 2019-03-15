@@ -100,16 +100,29 @@ section {
 .hidden {
   opacity:0;
 }
-.console-container {
- 
+.console-container { 
   font-family: 'Chakra Petch', sans-serif;
   display:block;
   color:white;
 }
 .console-underscore {
-   display:inline-block;
+  display:inline-block;
   position:relative;
   top:-0.14em;
   left:10px;
 }
+
+li.terminal-bullets {
+  list-style: none;
+  font-size: 1.25rem;
+  &:before {
+    content:"\f101"; 
+    font-family:FontAwesome;
+    left: 0;
+    color: $secondary;
+    margin-right: calc(1rem);
+  }
+}
+
+
 

@@ -155,13 +155,13 @@
               Valores
             </h1>
             <p class="lead text-justify">
-              <ul class="list-group">
-                <li class="list-group-item">Transparência</li>
-                <li class="list-group-item">Equidade</li>
-                <li class="list-group-item">Conformidade</li>
-                <li class="list-group-item">Confiança</li>
-                <li class="list-group-item">Respeito</li>
-                <li class="list-group-item">Prestação de contas</li>
+              <ul class="list">
+                <li class="terminal-bullets">Transparência</li>
+                <li class="terminal-bullets">Equidade</li>
+                <li class="terminal-bullets">Conformidade</li>
+                <li class="terminal-bullets">Confiança</li>
+                <li class="terminal-bullets">Respeito</li>
+                <li class="terminal-bullets">Prestação de contas</li>
               </ul>
             </p>
           </div>
@@ -230,16 +230,29 @@
       <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
         <i class="fa fa-3x fa-times"></i>
       </a>
-      <div class="container text-center">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Sistema de Gerenciamento de temperatura</h2>
+          <div class="col-lg-12 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0 text-center">SGTS</h2>
             <hr class="code-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
+            <div class="col-md-5 float-left">
+                <img class="img-fluid" src="img/portfolio/game.png" alt="">
+            </div>
+            <div class="col-md-12">
+                <p class="mb-5 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <p class="mb-5 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            </div><br>
+            <h4 class="text-secondary text-uppercase mb-0 text-center">Veja Quanto vale a pena monitorar a temperatura do seu servidor</h2>
+            <div class="container mt-3">
+              <div class="form-group">
+                <label for="fs"><b>Seu Faturamento Diário Através do servidor</b></label>
+                <input type="number" class="form-control" name="fs" id="fs" aria-describedby="helpId" placeholder="">
+                <small id="helpId" class="form-text text-muted">Ex: 10000</small>
+              </div>
+              <h4 class="text-secondary text-uppercase mb-0 text-center m-3" id="msg"></h2>
+              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="calc()">Calcular</button>
+              
+            </div>
           </div>
         </div>
       </div>
@@ -314,6 +327,14 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+
+  <script>
+    function calc() {
+      var valor = Number(fs.value);
+      var x = (valor / 24).toFixed(2);
+      msg.innerHTML = (`Se o seu servidor parar 1h por conta que de algum problema relacionado a temperatura e afins, seria perdido R$${x} Reais!!`);
+    }
+  </script>
 
 </body>
 

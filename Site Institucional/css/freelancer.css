@@ -120,6 +120,19 @@ section h2 {
   left: 10px;
 }
 
+li.terminal-bullets {
+  list-style: none;
+  font-size: 1.25rem;
+}
+
+li.terminal-bullets:before {
+  content: "\f101";
+  font-family: FontAwesome;
+  left: 0;
+  color: #162a55;
+  margin-right: calc(1rem);
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
