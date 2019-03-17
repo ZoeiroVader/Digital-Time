@@ -125,8 +125,9 @@ li.terminal-bullets {
 }
 
 li.terminal-bullets:before {
-  content: "\f101";
-  font-family: FontAwesome;
+  content: '\f101';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   left: 0;
   color: #162a55;
   margin-right: calc(1rem);
