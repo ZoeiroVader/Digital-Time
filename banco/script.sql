@@ -1,3 +1,4 @@
+
 create table Usuario (
     idUsuario int primary key identity(100,1),
     nome varchar (40),
@@ -22,9 +23,11 @@ create table Usuario (
 
     create table His_Alert (
     Id_HisAlerta int primary key identity(100,10),
-    fk_HisAtividade int foreign key references Historico(idHistorico),
-    fkAlerta int foreign key references Alerta(idAlerta));
-    select * from His_Alert
+   tempMaxima float,
+   tempMinima float,
+   dataAlert date,
+   tempoAlert  time);
+
 
     select ha.*, h.Temp_max, Data_hora, a.*  from His_Alert as ha, Historico as h, Alerta as a  where fk_HisAtividade = idHistorico and
      fkAlerta = idAlerta;
