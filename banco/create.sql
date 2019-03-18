@@ -1,4 +1,6 @@
 
+
+
 create table Usuario (
     idUsuario int primary key identity(100,1),
     nome varchar (40),
@@ -18,7 +20,7 @@ create table Usuario (
     idHistorico int primary key identity(1,1),
     Temp_min float,
     Temp_Max float,
-    Data_hora timestamp
+    Data_hora varchar(30)
     );
 
     create table His_Alert (
@@ -26,10 +28,8 @@ create table Usuario (
    tempMaxima float,
    tempMinima float,
    dataAlert date,
-   tempoAlert  time);
+   tempoAlert  varchar(30));
 
 
-    select ha.*, h.Temp_max, Data_hora, a.*  from His_Alert as ha, Historico as h, Alerta as a  where fk_HisAtividade = idHistorico and
-     fkAlerta = idAlerta;
-
+  
 

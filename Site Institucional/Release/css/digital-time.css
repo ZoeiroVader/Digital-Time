@@ -125,8 +125,9 @@ li.terminal-bullets {
 }
 
 li.terminal-bullets:before {
-  content: "\f101";
-  font-family: FontAwesome;
+  content: '\f101';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   left: 0;
   color: #162a55;
   margin-right: calc(1rem);
@@ -202,7 +203,7 @@ li.terminal-bullets:before {
 }
 
 header.masthead {
-  padding-top: calc(6rem + 72px);
+  padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
@@ -218,7 +219,7 @@ header.masthead h2 {
 
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: calc(6rem);
+    padding-top: calc(6rem + 30px);
     padding-bottom: 6rem;
   }
   header.masthead h1 {
